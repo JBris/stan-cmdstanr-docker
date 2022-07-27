@@ -4,4 +4,4 @@
 # Main
 ###################################################################
 
-docker pull ghcr.io/jbris/stan-docker:latest
+docker pull ghcr.io/jbris/stan-cmdstanr-docker:latest
