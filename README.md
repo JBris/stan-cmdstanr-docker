@@ -26,7 +26,7 @@ The following packages are installed during the image build process:
 * [tidybayes](https://mjskay.github.io/tidybayes/)
 * [bayesplot](https://mc-stan.org/bayesplot/)
 
-The [brms_within_chain_parallelization.R](brms_within_chain_parallelization.R) can be executed within the container to evaluate whether within-chain parallelization, CmdStan, and brms are working properly.
+The [brms_within_chain_parallelization.R](brms_within_chain_parallelization.R) script can be executed within the Docker container to evaluate whether within-chain parallelization, CmdStan, and brms are working properly.
 
 ### Docker
 
