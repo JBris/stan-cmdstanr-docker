@@ -10,9 +10,9 @@
 
 A Docker image to run Stan, cmdstanr, and brms for Bayesian statistical modelling
 
-Execute `docker pull ghcr.io/jbris/stan-docker:latest` or `bash docker_pull.sh` to pull the image.
+Execute `docker pull ghcr.io/jbris/stan-cmdstanr-docker:latest` or `bash docker_pull.sh` to pull the image.
 
-To convert the image into a Singularity container, run `singularity pull docker://ghcr.io/jbris/stan-docker:latest` or `bash singularity_pull.sh`.
+To convert the image into a Singularity container, run `singularity pull docker://ghcr.io/jbris/stan-cmdstanr-docker:latest` or `bash singularity_pull.sh`.
 
 ### Stan
 
