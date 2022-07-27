@@ -4,4 +4,4 @@
 # Main
 ###################################################################
 
-singularity pull docker://ghcr.io/jbris/stan-docker:latest
+singularity pull docker://ghcr.io/jbris/stan-cmdstanr-docker:latest
