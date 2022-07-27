@@ -1,4 +1,4 @@
-# stan-docker
+# stan-cmdstanr-docker
 
 ## Table of Contents  
 
