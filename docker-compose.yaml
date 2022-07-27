@@ -1,0 +1,30 @@
+version: "3.5"
+
+services:
+
+  stan:
+    image: "rocker/tidyverse:${TIDYVERSE_TAG}"
+    hostname: stan
+    stop_grace_period: 60s
+    restart: always
+    environment:
+      USER: $R_STUDIO_USER
+      PASSWORD: $R_STUDIO_PASSWORD
+      ROOT: "TRUE"
+      DISABLE_AUTH: "TRUE"
+      R_SEED: $R_SEED
+    build: 
+      args:
+        TIDYVERSE_TAG: $TIDYVERSE_TAG
+    ports:
+      - ${R_STUDIO_PORT}:8787 
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - ./r_home:/home
+
+networks:
+  default:
+      name: stan-docker
