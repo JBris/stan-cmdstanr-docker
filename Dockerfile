@@ -12,7 +12,7 @@ ENV R_PACKAGES="\
     future \
 " 
 
-RUN install2.r --error --skipinstalled --deps TRUE $R_PACKAGES
+RUN install2.r --error --skipinstalled $R_PACKAGES
 
 RUN mkdir -p $HOME/.R/ \ 
   && echo "CXX=clang++ -stdlib=libc++ -fsanitize=address,undefined -fno-sanitize=float-divide-by-zero -fno-omit-frame-pointer -fsanitize-address-use-after-scope -fno-sanitize=alignment -frtti" >> $HOME/.R/Makevars \
@@ -37,7 +37,7 @@ RUN cd /usr/share/ \
 
 RUN Rscript -e 'install.packages("cmdstanr", repos = c("https://mc-stan.org/r-packages/", getOption("repos")))' 
  
-RUN install2.r --error --skipinstalled --deps TRUE rstanarm
+RUN install2.r --error --skipinstalled rstanarm
 
 ENV BAYES_R_PACKAGES="\
     brms \
@@ -46,4 +46,4 @@ ENV BAYES_R_PACKAGES="\
     Matrix \
 " 
 
-RUN install2.r --error --skipinstalled --deps TRUE $BAYES_R_PACKAGES
+RUN install2.r --error --skipinstalled $BAYES_R_PACKAGES
