@@ -45,6 +45,7 @@ ENV BAYES_R_PACKAGES="\
     bayesplot \
     Matrix \
     projpred \
+    loo \ 
 " 
 
 RUN install2.r --error --skipinstalled $BAYES_R_PACKAGES
