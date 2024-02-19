@@ -1,5 +1,7 @@
 # stan-cmdstanr-docker
 
+[![pages-build-deployment](https://github.com/JBris/stan-cmdstanr-docker/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/JBris/stan-cmdstanr-docker/actions/workflows/pages/pages-build-deployment)
+
 ## Table of Contents  
 
 * [Introduction](#introduction) 
